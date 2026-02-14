@@ -13,6 +13,11 @@ Run with:
 """
 
 import asyncio
+import os
+
+# Set API key for this example (if not already set)
+# In production, use environment variables or a secure credential manager
+os.environ.setdefault("ANTHROPIC_API_KEY", "csk-p3t9dj3r4rdkmjyfp3exvjkemjx48c6e5pwd8ychvm3e9jr9")
 
 from framework.graph import EdgeCondition, EdgeSpec, Goal, GraphSpec, NodeSpec
 from framework.graph.executor import GraphExecutor
